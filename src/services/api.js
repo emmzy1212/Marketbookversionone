@@ -13,11 +13,11 @@ const api = {
   },
   
   loginUser: (credentials) => {
-    return axios.post(`${API_URL}/users/logi`, credentials)
+    return axios.post(`${API_URL}/users/login`, credentials)
   },
   
   getUserProfile: () => {
-    const user = JSON.parse(localStorage.getItem('user'))
+    const user = JSON.parse(localStorage.get tItem('user'))
     return axios.get(`${API_URL}/users/profile`, {
       headers: { Authorization: `Bearer ${user?.token}` }
     })
