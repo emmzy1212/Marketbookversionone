@@ -13,7 +13,7 @@ const api = {
   },
   
   loginUser: (credentials) => {
-    return axios.post(`${API_URL}/users/login`, credentials)
+    return axios.post(`${API_URL}/users/logi`, credentials)
   },
   
   getUserProfile: () => {
