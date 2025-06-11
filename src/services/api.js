@@ -17,7 +17,7 @@ const api = {
   },
   
   getUserProfile: () => {
-    const user = JSON.parse(localStorage.get tItem('user'))
+    const user = JSON.parse(localStorage.getItem('user'))
     return axios.get(`${API_URL}/users/profile`, {
       headers: { Authorization: `Bearer ${user?.token}` }
     })
